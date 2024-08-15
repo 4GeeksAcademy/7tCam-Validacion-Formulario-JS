@@ -14,38 +14,40 @@
             <div class="card-header fw-bold fs-3">
             Payment form example
             </div>
-            <div class="alert alert-danger mb-0 m-4" role="alert">
+            <!-- addvertencia sin js -->
+            <!-- <div class="alert alert-danger mb-0 m-4" role="alert">
                 Some fields are missing
-            </div>
+            </div> -->
             <div class="m-4">
-                <form class="row g-3">
+                <form id="miformulario" class="row g-3">
                     <div class="col-md-4">
-                    <label for="inputEmail4" class="fw-bold form-label">Card #</label>
-                    <input required placeholder="xxxxxxxxxxxx" type="email" class="form-control" id="inputEmail4">
+                    <label for="numbercard" class="fw-bold form-label">Card #</label>
+                    <input  placeholder="xxxxxxxxxxxx" type="number" class="form-control" id="numbercard">
                     </div>
                     <div class="col-md-4">
                     <label for="inputPassword4" class=" fw-bold form-label">CVC#</label>
-                    <input required placeholder="0000" type="password" class="form-control" id="inputPassword4">
+                    <input  placeholder="0000" type="password" class="form-control" id="inputPassword4">
                     </div>
                 
                     <div class="col-md-4">
                         <label for="inputAmount4" class=" fw-bold form-label d-flex justify-content-start">Amount</label>
                         <div class="d-flex">
                             <span>$</span>
-                            <input required placeholder="Amount" type="number" class="form-control" id="inputAmount4">
+                            <input  placeholder="Amount" type="number" class="form-control" id="inputAmount4">
                         </div>
                     </div>
                     <div class="col-6">
                     <label for="inputAddress" class="fw-bold form-label">First Name</label>
-                    <input required type="text" class="form-control" id="inputAddress">
+                    <input  type="text" class="form-control" id="inputAddress">
                     </div>
                     <div class="col-6">
                     <label for="inputAddress2" class="fw-bold form-label">Last Name</label>
-                    <input required type="text" class="form-control" id="inputAddress2">
+                    <input  type="text" class="form-control" id="inputAddress2">
                     </div>
+                    <!-- quitando required de los inputs -->
                     <div class="col-md-6">
                     <label for="inputCity" class="fw-bold form-label">City</label>
-                    <input required type="text" class="form-control" id="inputCity">
+                    <input  type="text" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-3">
                     <label for="inputState" class="fw-bold form-label">State</label>
@@ -66,7 +68,7 @@
                     </div>
                     <div class="col-md-3">
                     <label for="inputPostalCode" class="fw-bold form-label">Postal Code</label>
-                    <input required type="text" class="form-control" id="inputPostalCode">
+                    <input  type="text" class="form-control" id="inputPostalCode">
                     </div>
                      <div class="row g-1">
                         <!--modificacion col-12 col-md-6  -->
@@ -114,15 +116,16 @@
                             <p class="fw-light">Add any notes here.</p>
                         </div>
                     </div>
+                    <!-- botones -->
+                    <div class=" card-header border p-2 d-flex flex-rown justify-content-end gap-4 my-0">
+                        <button type="" href="#" class="col-1 btn btn-secondary">Cancel</button>
+                        <button type="submit" href="#" class="col-1 btn btn-primary">Send</button>
+                    </div>
                 </form>
-            </div>
-            <!-- botones -->
-            <div class=" card-header border p-2 d-flex flex-rown justify-content-end gap-4 my-0">
-                <button type="" href="#" class="col-1 btn btn-secondary">Cancel</button>
-                <button type="submit" href="#" class="col-1 btn btn-primary">Send</button>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
